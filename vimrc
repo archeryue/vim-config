@@ -44,6 +44,8 @@ au InsertLeave *.go,*.sh,*.php write
 " 插件开始的位置
 call plug#begin('~/.vim/plugged')
 "
+" 补全
+Plug 'neoclide/coc.nvim',{'branch': 'release'}
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " 可以快速对齐的插件
 Plug 'junegunn/vim-easy-align'
@@ -68,13 +70,6 @@ Plug 'vim-airline/vim-airline'
 " 可以在文档中显示 git 信息
 Plug 'airblade/vim-gitgutter'
 "
-" 可以在 vim 中使用 tab 补全
-"Plug 'vim-scripts/SuperTab'
-"
-" 可以在 vim 中自动完成
-"`Plug 'Shougo/neocomplete.vim'
-"
-"
 " 配色方案
 " colorscheme neodark
 Plug 'KeitaNakamura/neodark.vim'
@@ -89,10 +84,6 @@ Plug 'rakr/vim-one'
 Plug 'fatih/vim-go', { 'tag': '*' }
 " go 中的代码追踪，输入 gd 就可以自动跳转
 Plug 'dgryski/vim-godef'
-"
-" markdown 插件
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
 "
 " c++ plugin
 Plug 'bfrg/vim-cpp-modern'
@@ -210,9 +201,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let g:NERDTreeGitStatusShowIgnored = 1
 
-" markdwon 的快捷键
-map <silent> <F5> <Plug>MarkdownPreview
-map <silent> <F6> <Plug>StopMarkdownPreview
 "
 " tab 标签页切换快捷键
 :nn <Leader>1 1gt
@@ -225,3 +213,6 @@ map <silent> <F6> <Plug>StopMarkdownPreview
 :nn <Leader>8 8gt
 :nn <Leader>9 8gt
 :nn <Leader>0 :tablast<CR>
+
+" coc.nvimcconfirm popup
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
