@@ -39,18 +39,18 @@ syntax on                    " 开启文件类型侦测
 filetype plugin indent on    " 启用自动补全
 
 " 退出插入模式指定类型的文件自动保存
-au InsertLeave *.go,*.sh,*.php write
+au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py write
 
 " 插件开始的位置
 call plug#begin('~/.vim/plugged')
 "
 " 补全
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"
 " 可以快速对齐的插件
 Plug 'junegunn/vim-easy-align'
 "
-" 用来提供一个导航目录的侧边栏
+" NERDTree
 Plug 'scrooloose/nerdtree'
 "
 " 可以使 nerdtree 的 tab 更加友好些
@@ -61,7 +61,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 "
 " 查看当前代码文件中的变量和函数列表的插件，
 " 可以切换和跳转到代码中对应的变量和函数的位置
-" 大纲式导航, Go 需要 https://github.com/jstemmer/gotags 支持
+" need ctags
 Plug 'majutsushi/tagbar'
 "
 " Vim状态栏插件，包括显示行号，列号，文件类型，文件名，以及Git状态
@@ -82,7 +82,7 @@ Plug 'rakr/vim-one'
 "
 " go 主要插件
 Plug 'fatih/vim-go', { 'tag': '*' }
-" go 中的代码追踪，输入 gd 就可以自动跳转
+" go 中的代码追踪 gd
 Plug 'dgryski/vim-godef'
 "
 " c++ plugin
