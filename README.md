@@ -7,3 +7,6 @@
 # :PlugInstall
 
 # :GoInstallBinaries
+
+## Install everything else vim can not find: llvm/clangd/ctags and so on
+## Vim version >= 8.19
