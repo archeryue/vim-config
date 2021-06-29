@@ -88,6 +88,10 @@ Plug 'dgryski/vim-godef'
 " c++ plugin
 Plug 'bfrg/vim-cpp-modern'
 "
+" Markdown
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+"
 " 插件结束的位置，插件全部放在此行上面
 call plug#end()
 "====================================================================
@@ -223,3 +227,6 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 " switch .c & .h
 nmap <silent> <C-a> :CocCommand clangd.switchSourceHeader<cr>
+
+" Markdown
+nmap <silent> <C-m> <Plug>MarkdownPreview
