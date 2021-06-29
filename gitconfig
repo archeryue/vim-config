@@ -1,0 +1,27 @@
+[user]
+	name = archeryue
+	email = archeryue7@gmail.com
+[color]
+    ui = true
+    diff = true
+    status = true
+    branch = true
+    interactive = true
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    cb = checkout -b
+    df = diff
+    dc = diff --cached
+    lg = log -p
+    who = shortlog -s --
+    ll = log --decorate --graph --all
+    pl = pull origin master
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
