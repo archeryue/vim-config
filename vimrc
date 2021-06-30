@@ -92,6 +92,9 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 "
+" 注释插件
+Plug 'preservim/nerdcommenter'
+"
 " 插件结束的位置，插件全部放在此行上面
 call plug#end()
 "====================================================================
@@ -230,3 +233,7 @@ nmap <silent> <C-a> :CocCommand clangd.switchSourceHeader<cr>
 
 " Markdown
 nmap <silent> <C-m> <Plug>MarkdownPreview
+
+" Comment
+nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
+vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
