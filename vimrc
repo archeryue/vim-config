@@ -230,6 +230,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 " switch .c & .h
 nmap <silent> <C-a> :CocCommand clangd.switchSourceHeader<cr>
+" Apply AutoFix to problem on the current line.
+nmap <silent> <C-f> <Plug>(coc-fix-current)
 
 " Markdown
 nmap <silent> <C-m> <Plug>MarkdownPreview
