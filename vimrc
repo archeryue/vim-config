@@ -64,8 +64,6 @@ Plug 'rakr/vim-one'
 "
 " Golang
 Plug 'fatih/vim-go', { 'tag': '*' }
-" Golang gd
-Plug 'dgryski/vim-godef'
 "
 " C++
 Plug 'bfrg/vim-cpp-modern'
