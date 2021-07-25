@@ -1,13 +1,14 @@
 " Basic Config
+set nu
 set autochdir
 set nocompatible
-set nu
 set cursorline
 set showmatch
 set backspace=indent,eol,start
 
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 set autoindent
 
