@@ -76,6 +76,9 @@ Plug 'iamcco/markdown-preview.vim'
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
+" Snippets
+Plug 'SirVer/ultisnips'
+"
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
