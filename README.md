@@ -8,6 +8,7 @@
 
 1. :PlugInstall
 2. :GoInstallBinaries
+3. cp coc-settings.json to ~/.vim/
 
 ## Install dependencies
 - install everything else vim can not find: llvm/clangd/ctags and so on
