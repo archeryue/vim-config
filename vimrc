@@ -191,5 +191,5 @@ nmap <silent> <C-f> <Plug>(coc-fix-current)
 nmap <silent> <C-m> <Plug>MarkdownPreview
 
 " Comment
-nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
-vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
+nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
+vnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
