@@ -11,6 +11,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 set autoindent
+set cinoptions+=g0
 
 " define <Leader>
 let mapleader=";" 
