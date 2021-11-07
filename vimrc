@@ -70,10 +70,6 @@ Plug 'fatih/vim-go', { 'tag': '*' }
 " C++
 Plug 'bfrg/vim-cpp-modern'
 "
-" Markdown
-Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
-"
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
@@ -104,7 +100,6 @@ let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 
 let g:godef_split=2
-
 
 " Config NERDTree
 map <C-Left> :NERDTreeToggle<CR>
@@ -163,7 +158,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let g:NERDTreeGitStatusShowIgnored = 1
 
-"
 " switch tabs
 :nn <Leader>1 1gt
 :nn <Leader>2 2gt
@@ -187,9 +181,6 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> <C-a> :CocCommand clangd.switchSourceHeader<cr>
 " Apply AutoFix to problem on the current line.
 nmap <silent> <C-f> <Plug>(coc-fix-current)
-
-" Markdown
-nmap <silent> <C-m> <Plug>MarkdownPreview
 
 " Comment
 nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
