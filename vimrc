@@ -32,7 +32,7 @@ filetype plugin indent on
 au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py write
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 "
 " syntax and complete
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
