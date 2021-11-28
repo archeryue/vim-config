@@ -40,6 +40,8 @@ Plug 'neoclide/coc.nvim',{'branch': 'release'}
 " align
 Plug 'junegunn/vim-easy-align'
 "
+Plug 'xaizek/preamble.vim'
+"
 " NERDTree
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
@@ -185,3 +187,5 @@ nmap <silent> <C-f> <Plug>(coc-fix-current)
 " Comment
 nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
 vnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
+
+call Preamble#Enable('c,cpp,go,python')
