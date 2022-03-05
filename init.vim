@@ -34,12 +34,13 @@ au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py write
 """""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
 "
-" syntax and complete
+" Syntax and Complete
 Plug 'neoclide/coc.nvim',{'branch': 'release'}
 "
-" align
+" Align
 Plug 'junegunn/vim-easy-align'
 "
+" Fold
 Plug 'xaizek/preamble.vim'
 "
 " NERDTree
@@ -61,8 +62,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'KeitaNakamura/neodark.vim'
 " colorscheme monokai
 Plug 'crusoexia/vim-monokai'
-" colorscheme github 
-Plug 'acarapetis/vim-colors-github'
 " colorscheme one 
 Plug 'rakr/vim-one'
 "
@@ -82,9 +81,7 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set Color and Theme
-set termguicolors
-colorscheme one
-set background=dark
+colorscheme neodark
 
 " Config Golang
 let g:go_fmt_command = "goimports"
@@ -188,4 +185,4 @@ nmap <silent> <C-f> <Plug>(coc-fix-current)
 nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
 vnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
 
-call Preamble#Enable('c,cpp,go,python')
+call Preamble#Enable('c,cc,cpp,h,go')
