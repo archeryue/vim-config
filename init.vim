@@ -68,6 +68,9 @@ Plug 'rakr/vim-one'
 " Golang
 Plug 'fatih/vim-go', { 'tag': '*' }
 "
+" Rust
+Plug 'rust-lang/rust.vim'
+"
 " C++
 Plug 'bfrg/vim-cpp-modern'
 "
@@ -81,7 +84,8 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Set Color and Theme
-colorscheme neodark
+set termguicolors
+colorscheme one
 
 " Config Golang
 let g:go_fmt_command = "goimports"

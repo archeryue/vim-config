@@ -12,7 +12,8 @@
 3. install nodejs
 4. cp coc-settings.json to ~/.config/nvim/
 5. :CocInstall coc-clangd // for extensions
-6. cp go.snippets to ~/.config/nvim/UltiSnips/  
+6. :CocInstall coc-rust-analyzer
+7. cp go.snippets to ~/.config/nvim/UltiSnips/  
 
 ### Install dependencies
 - pip3 install neovim
