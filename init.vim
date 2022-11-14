@@ -161,7 +161,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 
 let g:NERDTreeGitStatusShowIgnored = 1
 
-" switch tabs
+" Switch tabs
 :nn <Leader>1 1gt
 :nn <Leader>2 2gt
 :nn <Leader>3 3gt
@@ -173,14 +173,14 @@ let g:NERDTreeGitStatusShowIgnored = 1
 :nn <Leader>9 8gt
 :nn <Leader>0 :tablast<CR>
 
-" coc.nvimcconfirm popup
+" Set coc.nvimcconfirm popup
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-" GoTo code navigation.
+" Code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-" switch .c & .h
+" Switch .c & .h
 nmap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
 " Apply AutoFix to problem on the current line.
 nmap <silent> <C-f> <Plug>(coc-fix-current)
@@ -189,4 +189,5 @@ nmap <silent> <C-f> <Plug>(coc-fix-current)
 nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
 vnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
 
+" Auto-fold preambles
 call Preamble#Enable('c,cc,cpp,h,go')
