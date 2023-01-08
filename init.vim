@@ -87,6 +87,13 @@ call plug#end()
 set termguicolors
 colorscheme one
 
+" Set Coc Color
+hi CocErrorSign         guifg=#E06C75
+hi CocWarningSign       guifg=#E5C07B
+hi CocInfoSign          guifg=#61AFEF
+hi CocHintSign          guifg=#586069
+hi CocRustChainingHint  guifg=#586069
+
 " Config Golang
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
