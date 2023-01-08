@@ -4,7 +4,16 @@
 			"command": "gopls",
 			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
 			"filetypes": ["go"]
+		},
+		"clangd": {
+		    "command": "clangd",
+			"rootPatterns": ["compile_flags.txt", "compile_commands.json"],
+			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
 		}
 	},
+    "rust-analyzer": {
+        "updates.prompt": false,
+        "server.path": "~/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rust-analyzer"
+    },
 	"suggest.autoTrigger": "always"
 }
