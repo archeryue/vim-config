@@ -29,7 +29,7 @@ syntax enable
 syntax on
 filetype plugin indent on
 
-au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py write
+au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py,*.rs write
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
@@ -87,12 +87,8 @@ call plug#end()
 set termguicolors
 colorscheme one
 
-" Set Coc Color
-hi CocErrorSign         guifg=#E06C75
-hi CocWarningSign       guifg=#E5C07B
-hi CocInfoSign          guifg=#61AFEF
-hi CocHintSign          guifg=#586069
-hi CocRustChainingHint  guifg=#586069
+" Set Coc Highlight Color
+hi CocHintSign  ctermfg=245 guifg=#658595
 
 " Config Golang
 let g:go_fmt_command = "goimports"
