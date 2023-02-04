@@ -11,6 +11,7 @@
 			"filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"]
 		}
 	},
+    "clangd.fallbackFlags": ["-std=c++20"],
     "rust-analyzer": {
         "updates.prompt": false,
         "server.path": "~/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rust-analyzer"
