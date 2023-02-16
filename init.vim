@@ -120,7 +120,7 @@ let g:nerdtree_tabs_open_on_console_startup=1
 nmap <C-Right> :TagbarToggle<CR>
 let g:tagbar_width = 25
 let g:tagbar_type_go = {
-	\ 'ctagstype' : 'go',
+    \ 'ctagstype' : 'go',
 	\ 'kinds'     : [
 		\ 'p:package',
 		\ 'i:imports:1',
@@ -149,18 +149,17 @@ let g:tagbar_type_go = {
 
 " NERDTree logos
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-				\ "Modified"  : "✹",
-				\ "Staged"    : "✚",
-				\ "Untracked" : "✭",
-				\ "Renamed"   : "➜",
-				\ "Unmerged"  : "═",
-				\ "Deleted"   : "✖",
-				\ "Dirty"     : "✗",
-				\ "Clean"     : "✔︎",
-				\ 'Ignored'   : '☒',
-				\ "Unknown"   : "?"
-				\ }
-
+    \ "Modified"  : "✹",
+	\ "Staged"    : "✚",
+	\ "Untracked" : "✭",
+	\ "Renamed"   : "➜",
+	\ "Unmerged"  : "═",
+	\ "Deleted"   : "✖",
+	\ "Dirty"     : "✗",
+	\ "Clean"     : "✔︎",
+	\ 'Ignored'   : '☒',
+	\ "Unknown"   : "?"
+	\ }
 let g:NERDTreeGitStatusShowIgnored = 1
 
 " Switch tabs
