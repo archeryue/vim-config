@@ -12,24 +12,15 @@ set softtabstop=4
 set expandtab
 set autoindent
 set cinoptions+=g0
-
-" define <Leader>
-let mapleader=";" 
-
-" v mode yy to system clipboard
-vmap <Leader>c "+yy
-" n mode yy to system clipboard
-nmap <Leader>c "+yy
-" n mode system clipboard paste
-nmap <Leader>v "+p
-
+set clipboard=unnamedplus
 set incsearch
 set ignorecase
+
 syntax enable
 syntax on
 filetype plugin indent on
 
-au InsertLeave *.c,*.cpp,*.cc,*.h,*.go,*.sh,*.py,*.rs write
+let mapleader=" "
 
 """""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.config/nvim/plugged')
@@ -54,7 +45,7 @@ Plug 'airblade/vim-gitgutter'
 " TagBar need ctags
 Plug 'majutsushi/tagbar'
 "
-" vim status bar
+" Vim status bar
 Plug 'vim-airline/vim-airline'
 "
 " Color & theme
@@ -74,6 +65,9 @@ Plug 'rust-lang/rust.vim'
 " C++
 Plug 'bfrg/vim-cpp-modern'
 "
+" Lua
+Plug 'rafcamlet/coc-nvim-lua'
+"
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
@@ -85,7 +79,7 @@ call plug#end()
 
 " Set Color and Theme
 set termguicolors
-colorscheme one
+colorscheme neodark
 
 " Set Coc Highlight Color
 hi CocHintSign  ctermfg=245 guifg=#658595
@@ -106,6 +100,11 @@ let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
 
 let g:godef_split=2
+
+let g:cpp_namespace_highlight = 1
+let g:cpp_member_highlight = 1
+let g:cpp_attributes_highlight = 1
+let g:cpp_simple_highlight = 1
 
 " Config NERDTree
 map <C-Left> :NERDTreeToggle<CR>
@@ -176,21 +175,23 @@ let g:NERDTreeGitStatusShowIgnored = 1
 :nn <Leader>9 8gt
 :nn <Leader>0 :tablast<CR>
 
-" Set coc.nvimcconfirm popup
+" Coc.nvimcconfirm popup
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-" Code navigation.
+
+" GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
 " Switch .c & .h
 nmap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
+
 " Apply AutoFix to problem on the current line.
 nmap <silent> <C-f> <Plug>(coc-fix-current)
 
 " Comment
-nnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
-vnoremap <C-_> :call nerdcommenter#Comment(0,"toggle")<CR>
+nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
+vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
-" Auto-fold preambles
 call Preamble#Enable('c,cc,cpp,h,go')
