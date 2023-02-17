@@ -88,7 +88,6 @@ hi CocHintSign  ctermfg=245 guifg=#658595
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
 let g:go_list_type = "quickfix"
-
 let g:go_version_warning = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
@@ -98,9 +97,9 @@ let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_generate_tags = 1
-
 let g:godef_split=2
 
+" Config cpp
 let g:cpp_namespace_highlight = 1
 let g:cpp_member_highlight = 1
 let g:cpp_attributes_highlight = 1
@@ -115,6 +114,31 @@ let NERDTreeShowHidden=0
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
 let NERDTreeShowBookmarks=2
 let g:nerdtree_tabs_open_on_console_startup=1
+" NERDTree logos
+let g:NERDTreeGitStatusIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+	\ "Staged"    : "✚",
+	\ "Untracked" : "✭",
+	\ "Renamed"   : "➜",
+	\ "Unmerged"  : "═",
+	\ "Deleted"   : "✖",
+	\ "Dirty"     : "✗",
+	\ "Clean"     : "✔︎",
+	\ 'Ignored'   : '☒',
+	\ "Unknown"   : "?"
+	\ }
+let g:NERDTreeGitStatusShowIgnored = 1
+" Switch tabs
+:nn <Leader>1 1gt
+:nn <Leader>2 2gt
+:nn <Leader>3 3gt
+:nn <Leader>4 4gt
+:nn <Leader>5 5gt
+:nn <Leader>6 6gt
+:nn <Leader>7 7gt
+:nn <Leader>8 8gt
+:nn <Leader>9 9gt
+:nn <Leader>0 :tablast<CR>
 
 " Config TagBar
 nmap <C-Right> :TagbarToggle<CR>
@@ -147,49 +171,19 @@ let g:tagbar_type_go = {
 	\ 'ctagsargs' : '-sort -silent'
 \ }
 
-" NERDTree logos
-let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-	\ "Staged"    : "✚",
-	\ "Untracked" : "✭",
-	\ "Renamed"   : "➜",
-	\ "Unmerged"  : "═",
-	\ "Deleted"   : "✖",
-	\ "Dirty"     : "✗",
-	\ "Clean"     : "✔︎",
-	\ 'Ignored'   : '☒',
-	\ "Unknown"   : "?"
-	\ }
-let g:NERDTreeGitStatusShowIgnored = 1
-
-" Switch tabs
-:nn <Leader>1 1gt
-:nn <Leader>2 2gt
-:nn <Leader>3 3gt
-:nn <Leader>4 4gt
-:nn <Leader>5 5gt
-:nn <Leader>6 6gt
-:nn <Leader>7 7gt
-:nn <Leader>8 8gt
-:nn <Leader>9 9gt
-:nn <Leader>0 :tablast<CR>
-
+" Config Coc.nvim
 " Coc.nvimcconfirm popup
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
-
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
 " Switch .c & .h
 nmap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
-
 " Apply AutoFix to problem on the current line.
 nmap <silent> <C-f> <Plug>(coc-fix-current)
 
-" Comment
+" Config Comment
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
