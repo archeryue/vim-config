@@ -1,5 +1,6 @@
 ## NeoVim
 ### ln -s vim-config/init.vim ~/.config/nvim/init.vim
+1. cp go.snippets to ~/.config/nvim/UltiSnips/
 
 ### Install plug-vim
 > curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -10,7 +11,6 @@
 4. cp coc-settings.json to ~/.config/nvim/
 5. :CocInstall coc-clangd // for extensions
 6. :CocInstall coc-rust-analyzer
-7. cp go.snippets to ~/.config/nvim/UltiSnips/
 
 ### Install dependencies
 - pip3 install neovim
