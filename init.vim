@@ -112,7 +112,6 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
 let NERDTreeShowHidden=0
 let NERDTreeIgnore=['\.pyc','\~$','\.swp']
-let NERDTreeShowBookmarks=2
 let g:nerdtree_tabs_open_on_console_startup=1
 " NERDTree logos
 let g:NERDTreeGitStatusIndicatorMapCustom = {
