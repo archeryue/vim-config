@@ -193,4 +193,15 @@ nmap <silent> <C-f> <Plug>(coc-fix-current)
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
+" Auto-Fold file headers
 call Preamble#Enable('c,cc,cpp,h,go')
+map <Leader>f   zf
+map <Leader>o   zo
+
+map <Leader><Left>  <C-w>h
+map <Leader><Right> <C-w>l
+map <Leader><Up>    <C-w>k
+map <Leader><Down>  <C-w>j
+
+map <Leader>s   :split<CR>
+map <Leader>v   :vsplit<CR>
