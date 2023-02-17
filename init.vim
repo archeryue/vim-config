@@ -171,7 +171,7 @@ let g:NERDTreeGitStatusShowIgnored = 1
 :nn <Leader>6 6gt
 :nn <Leader>7 7gt
 :nn <Leader>8 8gt
-:nn <Leader>9 8gt
+:nn <Leader>9 9gt
 :nn <Leader>0 :tablast<CR>
 
 " Coc.nvimcconfirm popup
