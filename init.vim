@@ -122,7 +122,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 	\ "Clean"     : "✔︎",
 	\ 'Ignored'   : '☒',
 	\ "Unknown"   : "?"
-	\ }
+\ }
 " Switch tabs
 :nn <Leader>1 1gt
 :nn <Leader>2 2gt
@@ -140,28 +140,6 @@ noremap <C-Right> :TagbarToggle<CR>
 let g:tagbar_width = 25
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
-	\ 'kinds'     : [
-		\ 'p:package',
-		\ 'i:imports:1',
-		\ 'c:constants',
-		\ 'v:variables',
-		\ 't:types',
-		\ 'n:interfaces',
-		\ 'w:fields',
-		\ 'e:embedded',
-		\ 'm:methods',
-		\ 'r:constructor',
-		\ 'f:functions'
-	\ ],
-	\ 'sro' : '.',
-	\ 'kind2scope' : {
-		\ 't' : 'ctype',
-		\ 'n' : 'ntype'
-	\ },
-	\ 'scope2kind' : {
-		\ 'ctype' : 't',
-		\ 'ntype' : 'n'
-	\ },
 	\ 'ctagsbin'  : 'gotags',
 	\ 'ctagsargs' : '-sort -silent'
 \ }
