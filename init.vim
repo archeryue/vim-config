@@ -178,12 +178,16 @@ nnoremap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
 " Apply AutoFix to problem on the current line.
 nnoremap <silent> <C-f> <Plug>(coc-fix-current)
 
+" Config EasyAlign
+nnoremap ga <Plug>(EasyAlign)
+vnoremap ga <Plug>(EasyAlign)
+
 " Config Comment
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
 " Config Fold
-call Preamble#Enable('c,cc,cpp,h,go')
+call Preamble#Enable('c,cc,cpp,h,hpp,go,rs')
 noremap <Leader>f   zf
 noremap <Leader>o   zo
 
