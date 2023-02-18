@@ -14,8 +14,9 @@
 5. :CocInstall coc-rust-analyzer
 
 ### Install dependencies
-- pip3 install neovim
-- Install everything else vim can not find: llvm/clangd/ctags and so on
+- Install nvim: pip3 install neovim
+- Install llvm/clangd for coc.nvim
+- Install ctags for tagbar
 
 ### For Vim(version >= 8.19)
 1. change ~/.config/nvim/init.vim to ~/.vimrc  
