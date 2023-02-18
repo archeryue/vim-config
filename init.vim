@@ -112,17 +112,17 @@ let NERDTreeIgnore=['\.out','\.pyc','\~$','\.swp']
 let g:nerdtree_tabs_open_on_console_startup=1
 " NERDTree logos
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-	\ "Staged"    : "✚",
-	\ "Untracked" : "✭",
-	\ "Renamed"   : "➜",
-	\ "Unmerged"  : "═",
-	\ "Deleted"   : "✖",
-	\ "Dirty"     : "✗",
-	\ "Clean"     : "✔︎",
-	\ 'Ignored'   : '☒',
-	\ "Unknown"   : "?"
-\ }
+            \ "Modified"  : "✹",
+            \ "Staged"    : "✚",
+            \ "Untracked" : "✭",
+            \ "Renamed"   : "➜",
+            \ "Unmerged"  : "═",
+            \ "Deleted"   : "✖",
+            \ "Dirty"     : "✗",
+            \ "Clean"     : "✔︎",
+            \ 'Ignored'   : '☒',
+            \ "Unknown"   : "?"
+            \ }
 " Switch tabs
 :nn <Leader>1 1gt
 :nn <Leader>2 2gt
@@ -139,10 +139,10 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 noremap <C-Right> :TagbarToggle<CR>
 let g:tagbar_width = 25
 let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-	\ 'ctagsbin'  : 'gotags',
-	\ 'ctagsargs' : '-sort -silent'
-\ }
+            \ 'ctagstype' : 'go',
+            \ 'ctagsbin'  : 'gotags',
+            \ 'ctagsargs' : '-sort -silent'
+            \ }
 
 " Config Coc.nvim
 " Coc.nvimcconfirm popup
