@@ -4,19 +4,20 @@
 2. ln -s go.snippets ~/.config/nvim/UltiSnips/
 3. ln -s coc-settings.json ~/.config/nvim/
 
-### Install plug-vim
-> curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-1. Install nodejs // for coc.nvim
-2. :PlugInstall
-3. :GoInstallBinaries
-4. :CocInstall coc-clangd
-5. :CocInstall coc-rust-analyzer
-
 ### Install dependencies
 - Install nvim: pip3 install neovim
+- Install nodejs for coc.nvim
 - Install llvm/clangd for coc.nvim
 - Install ctags for tagbar
+
+### Install plug-vim & plugins
+> curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+1. :PlugInstall
+2. :GoInstallBinaries
+3. :CocInstall coc-go
+4. :CocInstall coc-clangd
+5. :CocInstall coc-rust-analyzer
 
 ### For Vim(version >= 8.19)
 1. change ~/.config/nvim/init.vim to ~/.vimrc  
