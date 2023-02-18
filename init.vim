@@ -1,5 +1,5 @@
 " Basic Config
-set nu
+set number
 set autochdir
 set nocompatible
 set cursorline
@@ -37,10 +37,7 @@ Plug 'xaizek/preamble.vim'
 " NERDTree
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
-"
-" Git
 Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'airblade/vim-gitgutter'
 "
 " TagBar need ctags
 Plug 'majutsushi/tagbar'
@@ -106,7 +103,7 @@ let g:cpp_attributes_highlight = 1
 let g:cpp_simple_highlight = 1
 
 " Config NERDTree
-map <C-Left> :NERDTreeToggle<CR>
+noremap <C-Left> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize = 25
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
@@ -140,7 +137,7 @@ let g:NERDTreeGitStatusShowIgnored = 1
 :nn <Leader>0 :tablast<CR>
 
 " Config TagBar
-nmap <C-Right> :TagbarToggle<CR>
+noremap <C-Right> :TagbarToggle<CR>
 let g:tagbar_width = 25
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
@@ -174,27 +171,29 @@ let g:tagbar_type_go = {
 " Coc.nvimcconfirm popup
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 " GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nnoremap <silent> gd <Plug>(coc-definition)
+nnoremap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> gr <Plug>(coc-references)
 " Switch .c & .h
-nmap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
+nnoremap <silent> <C-s> :CocCommand clangd.switchSourceHeader<cr>
 " Apply AutoFix to problem on the current line.
-nmap <silent> <C-f> <Plug>(coc-fix-current)
+nnoremap <silent> <C-f> <Plug>(coc-fix-current)
 
 " Config Comment
 nnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 vnoremap <C-_> :call NERDComment(0,"toggle")<CR>
 
-" Auto-Fold file headers
+" Config Fold
 call Preamble#Enable('c,cc,cpp,h,go')
-map <Leader>f   zf
-map <Leader>o   zo
+noremap <Leader>f   zf
+noremap <Leader>o   zo
 
-map <Leader><Left>  <C-w>h
-map <Leader><Right> <C-w>l
-map <Leader><Up>    <C-w>k
-map <Leader><Down>  <C-w>j
+" Config windows-switch
+noremap <Leader><Left>  <C-w>h
+noremap <Leader><Right> <C-w>l
+noremap <Leader><Up>    <C-w>k
+noremap <Leader><Down>  <C-w>j
 
-map <Leader>s   :split<CR>
-map <Leader>v   :vsplit<CR>
+" Config windows-split
+noremap <silent><Leader>s   :split<CR>
+noremap <silent><Leader>v   :vsplit<CR>
