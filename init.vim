@@ -108,7 +108,7 @@ let g:NERDTreeWinSize = 25
 let NERDTreeShowLineNumbers=1
 let NERDTreeAutoCenter=1
 let NERDTreeShowHidden=0
-let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+let NERDTreeIgnore=['\.out','\.pyc','\~$','\.swp']
 let g:nerdtree_tabs_open_on_console_startup=1
 " NERDTree logos
 let g:NERDTreeGitStatusIndicatorMapCustom = {
@@ -123,7 +123,6 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 	\ 'Ignored'   : '☒',
 	\ "Unknown"   : "?"
 	\ }
-let g:NERDTreeGitStatusShowIgnored = 1
 " Switch tabs
 :nn <Leader>1 1gt
 :nn <Leader>2 2gt
