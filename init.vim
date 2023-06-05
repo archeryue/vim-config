@@ -62,9 +62,6 @@ Plug 'rust-lang/rust.vim'
 " C++
 Plug 'bfrg/vim-cpp-modern'
 "
-" Lua
-Plug 'rafcamlet/coc-nvim-lua'
-"
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
