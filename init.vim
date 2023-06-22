@@ -62,6 +62,9 @@ Plug 'rust-lang/rust.vim'
 " C++
 Plug 'bfrg/vim-cpp-modern'
 "
+" Python
+Plug 'davidhalter/jedi-vim'
+"
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
@@ -100,6 +103,11 @@ let g:cpp_namespace_highlight = 1
 let g:cpp_member_highlight = 1
 let g:cpp_attributes_highlight = 1
 let g:cpp_simple_highlight = 1
+
+" Config Python
+let g:jedi#goto_command = "gd"
+let g:jedi#usages_command = "gr"
+let g:jedi#documentation_command = "<leader>d"
 
 " Config NERDTree
 noremap <C-Left> :NERDTreeToggle<CR>
