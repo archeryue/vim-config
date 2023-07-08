@@ -9,6 +9,7 @@
 - Install nodejs for coc.nvim
 - Install llvm/clangd for coc.nvim
 - Install ctags for tagbar
+- Install jedi for python
 
 ### Install plug-vim & plugins
 > curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
