@@ -19,6 +19,7 @@
 3. :CocInstall coc-go
 4. :CocInstall coc-clangd
 5. :CocInstall coc-rust-analyzer
+6. :CocInstall coc-html/css/eslint/json etc
 
 ### For Vim(version >= 8.19)
 1. change ~/.config/nvim/init.vim to ~/.vimrc  
