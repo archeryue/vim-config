@@ -17,7 +17,6 @@ set incsearch
 set ignorecase
 
 syntax enable
-syntax on
 filetype plugin indent on
 
 let mapleader=" "
@@ -48,8 +47,6 @@ Plug 'vim-airline/vim-airline'
 " Color & theme
 " colorscheme neodark
 Plug 'KeitaNakamura/neodark.vim'
-" colorscheme monokai
-Plug 'crusoexia/vim-monokai'
 " colorscheme one 
 Plug 'rakr/vim-one'
 "
