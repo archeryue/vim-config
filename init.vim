@@ -65,11 +65,6 @@ Plug 'davidhalter/jedi-vim'
 " Quick Comment
 Plug 'preservim/nerdcommenter'
 "
-" Snippets
-Plug 'SirVer/ultisnips'
-"
-" Copilot
-Plug 'github/copilot.vim'
 call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""
 

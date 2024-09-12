@@ -1,7 +1,6 @@
 ## NeoVim
 ### Parepre Settings
 1. ln -s init.vim ~/.config/nvim/
-2. ln -s go.snippets ~/.config/nvim/UltiSnips/
 3. ln -s coc-settings.json ~/.config/nvim/
 
 ### Install dependencies
